@@ -1,4 +1,4 @@
-import { fetchList } from '@/lib/tmdb'
+import { fetchList, IMG_URL } from '@/lib/tmdb'
 import HeroBanner from '@/components/HeroBanner'
 import MovieRow from '@/components/MovieRow'
 import type { Movie } from '@/types/movie'
@@ -14,9 +14,9 @@ export default async function Home() {
     <main>
       <HeroBanner movie={hero} />
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <MovieRow title="Popular" movies={popular as Movie[]} />
-        <MovieRow title="Now Playing" movies={nowPlaying as Movie[]} />
-        <MovieRow title="Top Rated" movies={topRated as Movie[]} />
+        <MovieRow title="Popular" movies={popular as Movie[]} imageBase={IMG_URL} />
+        <MovieRow title="Now Playing" movies={nowPlaying as Movie[]} imageBase={IMG_URL} />
+        <MovieRow title="Top Rated" movies={topRated as Movie[]} imageBase={IMG_URL} />
       </div>
     </main>
   )
