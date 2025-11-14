@@ -1,23 +1,7 @@
 {
-	"name": "streaming-dashboard16",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start"
-	},
-	"dependencies": {
-		"next": "latest",
-		"react": "latest",
-		"react-dom": "latest"
-	},
 	"devDependencies": {
 		"tailwindcss": "^4.1.17",
 		"postcss": "^8.5.6",
-		"autoprefixer": "^10.4.22",
-		"typescript": "^5",
-		"@types/node": "^20",
-		"@types/react": "^19",
-		"@types/react-dom": "^19"
+		"autoprefixer": "^10.4.22"
 	}
 }
